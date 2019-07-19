@@ -1,0 +1,21 @@
+{
+    "NONE": {
+        "awscloudformation": {
+            "AuthRoleName": "comorion-20190409145946-authRole",
+            "UnauthRoleArn": "arn:aws:iam::268013942894:role/comorion-20190409145946-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::268013942894:role/comorion-20190409145946-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "comorion-20190409145946-deployment",
+            "UnauthRoleName": "comorion-20190409145946-unauthRole",
+            "StackName": "comorion-20190409145946",
+            "StackId": "arn:aws:cloudformation:us-west-2:268013942894:stack/comorion-20190409145946/692984c0-5b0a-11e9-8252-067794494828"
+        },
+        "categories": {
+            "auth": {
+                "cognitofd2b3a14": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"2513382905361549\",\"client_secret\":\"f273da55353d44a9149b557d679b1d96\"},{\"ProviderName\":\"Google\",\"client_id\":\"712341456883-dk2kqgbr886d77bur8cemo7et5rd7pck.apps.googleusercontent.com\",\"client_secret\":\"cwtkGykbsiuZQN3klPvllUBq\"}]"
+                }
+            }
+        }
+    }
+}

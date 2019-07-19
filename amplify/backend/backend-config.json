@@ -1,0 +1,22 @@
+{
+	"api": {
+		"Comorion API": {
+			"service": "AppSync",
+			"output": {
+				"securityType": "API_KEY"
+			}
+		}
+	},
+	"auth": {
+		"cognitofd2b3a14": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"s3stuff": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
