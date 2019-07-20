@@ -6,6 +6,7 @@ import {
   // NextAppContext,
 } from 'next/app';
 import Template from '../src/components/Template';
+import '../src/responsive.scss';
 
 function MyApp<P>(props: P & AppInitialProps & AppProps) {
   const { Component, pageProps } = props;

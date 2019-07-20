@@ -1,4 +1,4 @@
-const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
+const withSass = require('@zeit/next-sass');
 const baseConfig = { distDir: 'dist' };
-module.exports = withImages(withCSS(baseConfig));
+module.exports = withImages(withSass(baseConfig));
