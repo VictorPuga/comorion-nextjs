@@ -18,6 +18,22 @@
     justify-content: center;
 }
 
+.place-input-suggests {
+    max-width: 250%;
+}
+
+.place-input-suggests li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 991px) {
+    .place-input-suggests {
+        max-width: 110%;
+    }
+}
+
 @media (max-width: 767px) {
     .content {
         padding: 20px;
@@ -26,6 +42,9 @@
     .content>div {
         padding: 10px;
         padding-top: 8em;
+    }
+    .place-input-suggests {
+        max-width: 105%;
     }
 }
 
@@ -40,6 +59,9 @@
     }
     .jumbotron .row {
         margin: -1rem 0.2rem -4rem;
+    }
+    .place-input-suggests {
+        max-width: 100%;
     }
 }
 

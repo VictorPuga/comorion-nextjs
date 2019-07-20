@@ -92,7 +92,13 @@ export default function PaginatedForm(props: PaginatedFormProps): JSX.Element {
               </Nav>
             ))}
           </Col>
-          <Col xs='12' sm='6' md='7' lg='4' style={{ marginBottom: '20px' }}>
+          <Col
+            xs='12'
+            sm='6'
+            md='7'
+            lg='4'
+            style={{ marginBottom: '20px', zIndex: 2 }}
+          >
             <Tab.Content>
               {newSections.map(({ inputs }, index) => (
                 <Tab.Pane key={`FORM_INPUT_${index}`} eventKey={index}>

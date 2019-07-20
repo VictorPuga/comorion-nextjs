@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
-import Geosuggest from 'react-geosuggest';
+import Geosuggest, { Suggest } from 'react-geosuggest';
 
 import findErrorMessages from '../utils/findErrorMessages';
 
@@ -33,15 +33,17 @@ function PlaceInput(props: BaseInputProps<string>) {
         name='info_description'
         style={{
           suggests: {
-            position: 'initial',
+            position: 'static',
           },
         }}
         inputClassName='form-control dropdown-toggle'
-        suggestsClassName='dropdown-menu show'
+        suggestsClassName='dropdown-menu show place-input-suggests'
         suggestsHiddenClassName='d-none'
-        suggestItemClassName='dropdown-item'
+        suggestItemClassName='dropdown-item '
         suggestItemActiveClassName='dropdown-item active'
-        onSuggestSelect={({ placeId }: { placeId: any }) => onChange(placeId)}
+        onSuggestSelect={({ placeId }: any = { placeId: value }) => {
+          onChange(placeId);
+        }}
         location={
           new google.maps.LatLng(28.67391717379794, -106.07982229828644)
         }

@@ -25,10 +25,16 @@ class MyDocument extends Document {
       integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf"
       cross=rigin="anonymous"
     /> */}
-          <link
+          {/* <link
             href='https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css'
             rel='stylesheet'
             integrity='sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt'
+            crossOrigin='anonymous'
+          /> */}
+          <link
+            rel='stylesheet'
+            href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+            integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
             crossOrigin='anonymous'
           />
           <link rel='stylesheet' href='/static/responsive.css' />
