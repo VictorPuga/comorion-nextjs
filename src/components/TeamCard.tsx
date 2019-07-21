@@ -4,13 +4,14 @@ import Link from 'next/link';
 export default function TeamCard(props: { team: ComorionTeam }): JSX.Element {
   const { team } = props;
   return (
-    <Link href='team/[id]' as={`/team/${team.id}`}>
-      <a
-        style={{
-          textDecoration: 'none',
-        }}
-      >
-        <Card style={{ maxWidth: 500, marginBottom: '4em' }}>
+    <Card style={{ maxWidth: 500, margin: 'auto', marginBottom: '4em' }}>
+      <Link href='team/[id]' as={`/team/${team.id}`}>
+        <a
+          style={{
+            textDecoration: 'none',
+            color: 'black',
+          }}
+        >
           <Card.Header>
             <h3>{team.info.name}</h3>
             <hr />
@@ -29,8 +30,8 @@ export default function TeamCard(props: { team: ComorionTeam }): JSX.Element {
           <Card.Body>
             <p style={{ color: 'black' }}>{team.info.description}</p>
           </Card.Body>
-        </Card>
-      </a>
-    </Link>
+        </a>
+      </Link>
+    </Card>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
-import router from 'next/router';
+import Link from 'next/link';
 import Logo from '../assets/logo.svg';
 
 export default function Routes(): JSX.Element {
@@ -17,24 +17,26 @@ export default function Routes(): JSX.Element {
       }}
       fixed='top'
     >
-      <Navbar.Brand onClick={() => router.push('/')}>
-        <Image src={Logo} height='60px' />
-      </Navbar.Brand>
+      <Link href='/' passHref>
+        <Navbar.Brand>
+          <Image src={Logo} height='60px' />
+        </Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'>
-          <Nav.Link onClick={() => router.push('/create-team')}>
-            Crea un equipo
-          </Nav.Link>
-          <Nav.Link onClick={() => router.push('/create-event')}>
-            Crea un evento
-          </Nav.Link>
-          <Nav.Link onClick={() => router.push('/create-user')}>
-            Sign In
-          </Nav.Link>
-          <Nav.Link onClick={() => router.push('/take-attendance')}>
-            Tomar asistencia
-          </Nav.Link>
+          <Link href='/create-team' passHref>
+            <Nav.Link>Crea un equipo</Nav.Link>
+          </Link>
+          <Link href='/create-event' passHref>
+            <Nav.Link>Crea un evento</Nav.Link>
+          </Link>
+          <Link href='/create-user' passHref>
+            <Nav.Link>Sign In</Nav.Link>
+          </Link>
+          <Link href='/take-attendance' passHref>
+            <Nav.Link>Tomar asistencia</Nav.Link>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
