@@ -1,13 +1,13 @@
 import React from 'react';
-import CreateUserView from '../src/views/CreateUser';
+import CreateUser from '../src/views/CreateUser';
 import { NextPageContext } from 'next';
 
-function CreateUser() {
-  return <CreateUserView />;
+function CreateUserPage() {
+  return <CreateUser />;
 }
 
-CreateUser.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// CreateUserPage.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
-export default CreateUser;
+export default CreateUserPage;

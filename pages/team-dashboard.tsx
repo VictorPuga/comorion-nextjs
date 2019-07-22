@@ -1,13 +1,13 @@
 import React from 'react';
-import TeamDashboardView from '../src/views/TeamDashboard';
+import TeamDashboard from '../src/views/TeamDashboard';
 import { NextPageContext } from 'next';
 
-function TeamDashboard() {
-  return <TeamDashboardView />;
+function TeamDashboardPage() {
+  return <TeamDashboard />;
 }
 
-TeamDashboard.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// TeamDashboardPage.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
-export default TeamDashboard;
+export default TeamDashboardPage;

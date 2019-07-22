@@ -1,10 +1,16 @@
 import React from 'react';
 import NotFoundView from '../src/views/NotFound';
-
-function NotFound() {
+type ErrorProps = {
+  statusCode: any;
+};
+function Error({ statusCode }: ErrorProps) {
+  console.log('Error status code', statusCode);
   return <NotFoundView />;
 }
 
-NotFound.getInitialProps = async () => {};
+Error.getInitialProps = ({ res, err }) => {
+  const statusCode = res ? res.statusCode : err ? err.statusCode : null;
+  return { statusCode };
+};
 
-export default NotFound;
+export default ErrorEvent;

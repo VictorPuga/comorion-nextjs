@@ -1,13 +1,13 @@
 import React from 'react';
-import TeamsView from '../src/views/Teams';
+import Teams from '../src/views/Teams';
 import { NextPageContext } from 'next';
 
-function Teams() {
-  return <TeamsView />;
+function TeamsPage() {
+  return <Teams />;
 }
 
-Teams.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// TeamsPage.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
-export default Teams;
+export default TeamsPage;

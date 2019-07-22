@@ -6,8 +6,8 @@ function Home() {
   return <Events />;
 }
 
-Home.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// Home.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
 export default Home;

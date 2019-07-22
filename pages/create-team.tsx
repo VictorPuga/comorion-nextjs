@@ -1,13 +1,13 @@
 import React from 'react';
-import CreateTeamView from '../src/views/CreateTeam';
+import CreateTeam from '../src/views/CreateTeam';
 import { NextPageContext } from 'next';
 
-function CreateTeam() {
-  return <CreateTeamView />;
+function CreateTeamPage() {
+  return <CreateTeam />;
 }
 
-CreateTeam.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// CreateTeamPage.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
-export default CreateTeam;
+export default CreateTeamPage;

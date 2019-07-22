@@ -1,13 +1,18 @@
 import React from 'react';
-import TakeAttendanceView from '../src/views/AdminTakeAttendance';
+import TakeAttendance from '../src/views/AdminTakeAttendance';
 import { NextPageContext } from 'next';
+import NoSSR from 'react-no-ssr';
 
-function TakeAttendance() {
-  return <TakeAttendanceView />;
+function TakeAttendancePage() {
+  return (
+    <NoSSR>
+      <TakeAttendance />
+    </NoSSR>
+  );
 }
 
-TakeAttendance.getInitialProps = async (_ctx: NextPageContext) => {
-  return {};
-};
+// TakeAttendancePage.getInitialProps = async (_ctx: NextPageContext) => {
+//   return {};
+// };
 
-export default TakeAttendance;
+export default TakeAttendancePage;

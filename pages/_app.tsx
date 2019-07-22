@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-  Container,
-  AppInitialProps,
-  AppProps,
-  // NextAppContext,
-} from 'next/app';
+import { Container, AppInitialProps, AppProps } from 'next/app';
+import { AppContextType } from 'next-server/dist/lib/utils';
+import { Router } from 'next/dist/client/router';
+
 import Template from '../src/components/Template';
 import '../src/responsive.scss';
 
@@ -19,19 +17,14 @@ function MyApp<P>(props: P & AppInitialProps & AppProps) {
   );
 }
 
-// MyApp.getInitialProps = async function getInitialProps({
+// MyApp.getInitialProps = async ({
 //   Component,
 //   ctx,
-// }: {
-//   Component: any;
-//   ctx: NextAppContext;
-// }): Promise<DefaultAppIProps> {
+// }: AppContextType<Router>): Promise<AppInitialProps> => {
 //   let pageProps = {};
-
 //   if (Component.getInitialProps) {
 //     pageProps = await Component.getInitialProps(ctx);
 //   }
-
 //   return { pageProps };
 // };
 
